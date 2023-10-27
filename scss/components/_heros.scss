@@ -1,5 +1,5 @@
 .heros {
-    background-image: url(/images/2-mobile-img.jpg);
+    background-image: url(../images/2-mobile-img.jpg);
     max-width: 479px;
     height: 400px;
 
@@ -16,13 +16,13 @@
 
     @media screen and (min-width:480px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.40),
-                rgba(47, 48, 58, 0.40)), url(/images/2-mobile-img.jpg);
+                rgba(47, 48, 58, 0.40)), url(../images/2-mobile-img.jpg);
         width: 480px;
     }
 
     @media screen and (min-width:768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.40),
-                rgba(47, 48, 58, 0.40)), url(/images/3-tablet-img.jpg);
+                rgba(47, 48, 58, 0.40)), url(../images/3-tablet-img.jpg);
         width: 768px;
     }
 
