@@ -434,7 +434,6 @@ p {
 }
 
 .heros {
-  background-image: url(../images/2-mobile-img.jpg);
   max-width: 479px;
   height: 400px;
   display: -webkit-box;
@@ -457,6 +456,8 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2-mobile-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2-mobile-img.jpg);
   }
 }
 @media screen and (min-width: 480px) {
