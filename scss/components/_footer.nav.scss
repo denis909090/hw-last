@@ -5,8 +5,17 @@
     line-height: 1.1;
     letter-spacing: 0.78px;
     font-family: 'Raleway', sans-serif;
-    width: 145px;
-    height: 30px;
+
+    @media screen and (min-width:480px) {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
+}
+
+.footer-block {
+    @media screen and (min-width:480px) {
+        text-align: center;
+    }
 }
 
 .navigation-footer__social-item-footer {

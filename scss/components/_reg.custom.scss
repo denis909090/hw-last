@@ -1,39 +1,26 @@
 .customers {
     color: #212121;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
+    letter-spacing: 0.84px;
+    margin-bottom: 30px;
 
-    @media (min-width:480px) {
-        font-size: 20px;
+
+    @media (min-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
     }
-
-    // @include nw(desktop) {
-    //     font-size: 28px;
-    //     letter-spacing: 0.84px;
-    //     margin-bottom: 30px;
-    // }
-
-    // @include nw(tablet) {
-    //     font-size: 28px;
-    //     letter-spacing: 0.84px;
-    //     margin-bottom: 30px;
-    // }
 }
 
 .regulars-customers {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 94px 0;
 
-
-    // @include mq(desctop) {
-    //     padding-top: 94px;
-    //     padding-bottom: 94px;
-    // }
+    @media screen and (min-width:1200px){
+        padding: 94px 0; 
+    }
 }
 
 h2 {
@@ -50,11 +37,15 @@ h2 {
 .regular-customer__list {
     width: 170px;
 
-    // @include nw(desktop) {
-    //     width: 226px;
-    // }
+    @media screen and (max-width:480px) {
+        width: 100%;
+     }
 
-    // @include nw(tablet) {
-    //     width: 210px;
-    // }
+    @media screen and (min-width:480px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 226px;
+    }
 }

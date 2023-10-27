@@ -3,14 +3,6 @@
     margin-bottom: 12px;
 }
 
-// .modal-form {
-// max-width: 340px;
-
-// @include mq(desctop) {
-//     width: 448px;
-// }
-// }
-
 .colortext-modal {
     color: #2196F3;
     font-size: 14px;
@@ -23,16 +15,6 @@
     @include nw(desktop) {
         font-size: 12px;
     }
-
-    // @include mq(mobile) {
-    //     color: #2196F3;
-    //     font-size: 12px;
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     line-height: normal;
-    //     letter-spacing: 0.36px;
-    //     text-decoration-line: underline;
-    // }
 }
 
 .btn {
@@ -126,11 +108,6 @@ display: block;
     @include nw(desktop) {
         line-height: 30px;
     }
-
-    // @include mq(not-desctop) {
-    //     line-height: 24px;
-    // }
-
 }
 
 .form-label-police {
@@ -171,12 +148,6 @@ display: block;
     display: flex;
     align-items: center;
     margin: 20px 0 30px 0;
-
-    
-
-    // @media screen and(min-width:1200px) {
-    //     margin: 20px 0 30px 12px;
-    // }
 }
 
 .chek_input {

@@ -1,33 +1,39 @@
 .team {
     background-color: var(--background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
 
-    @include nw(desktop) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
     }
 }
 
 .team__personnel {
+    color: #212121;
+
+    font-size: 28px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
+    letter-spacing: 0.84px;
+
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-color-header);
-    margin-bottom: 50px;
+    font-style: normal;
+    line-height: normal;
+
+    margin-bottom: 30px;
     margin-top: 0;
 
-    @include nw(desktop) {
-        margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        letter-spacing: 1.08px;
+
+        margin-bottom: 50px;
     }
 }
 
 .personnel-table__personnel-item {
     padding: 30px 32px;
 
-    @include nw(desktop) {
-        padding: 30px 74px 24px 74px;
+    @media screen and (min-width:480px) {
+        padding: 30px 122px 24px 122px;
     }
+
 }

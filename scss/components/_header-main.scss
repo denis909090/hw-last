@@ -2,8 +2,13 @@
     align-items: center;
     
     @media screen and (min-width:480px) {
-        padding:12px 0;
+        padding:16px 0;
         display: block;
+    }
+
+    @media screen and (max-width:480px) {
+        display: block;
+        padding: 12px 0;
     }
 }
 
@@ -56,12 +61,16 @@
 .header-navigation {
     display: flex;
     gap: 315px;
-
-    @include nw(desktop) {
+    
+    @media screen and (min-width:768px) {
         gap: 94px;
     }
 
     @media screen and (min-width:480px) {
        display: none; 
+    }
+
+    @media screen  and (max-width:480px) {
+        display: none;
     }
 }

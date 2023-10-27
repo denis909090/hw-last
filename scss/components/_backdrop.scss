@@ -20,22 +20,11 @@
 .backdrop .modal {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-
-    // @include mq(mobile) {
-    //     width: 450px
-    // }
-
-    // @include mq(tablet) {
-    //     width: 450px
-    // }
-
-    // @include mq(desctop) {
-    //     width: 528px;
-    // }
 }
 
 .modal {
     width: 94%;
+    max-height: 609px;
 
     padding: 40px;
 
@@ -50,6 +39,10 @@
     @media screen and (min-width:480px) {
         width: 450px;
         margin-top: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-height: none;
     }
 }
 

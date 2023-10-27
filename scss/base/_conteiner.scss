@@ -11,32 +11,6 @@
     @media screen and (min-width:768px) {
         width: 768px;
     }
-    // @media screen and (max-width:481px) {
-    //     width: 450px;
-    // }
-
-    // @media screen and (min-width:480px) {
-    //     width: 450px;
-    // }
-
-    // 768px
-    // @media screen and (min-width:430px) {
-        
-    // // }
-    // @include nw(tablet) {
-    //     width: 450px;
-    // }
-
-    // @include nw(desktop) {
-    //     width: 768px;
-    // }
-
-    // 480px 
-
-    // 440px
-    // @media screen and (max-width:479px) {
-    //     max-width: 440px;
-    // }
 }
 
 .page-header-conteiner {
@@ -78,41 +52,23 @@
 .footer-conteiner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
 
-    @include nw(desktop) {
+    @media screen and (min-width:480px) {
         flex-wrap: wrap;
         justify-content: center;
         gap: 60px 165px;
 
         align-items: flex-start;
     }
-
-    // @include mq(tablet) {
-    //     gap: 60px 165px;
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     max-width: 100%;
-    // }
-
-    // @include mq(mobile) {
-    //     gap: 60px 165px;
-
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     align-items: baseline;
-
-    //     max-width: 100%;
-    // }
-
-    // @include mq(desctop) {
-    //     gap: 0;
-    // }
 }
 
 .join-footer-conteiner {
-    margin-left: auto;
+    margin-left: 0;
 
-    @include nw(desktop) {
-        margin-left: 0;
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
     }
 }
