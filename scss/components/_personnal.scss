@@ -1,0 +1,33 @@
+.team {
+    background-color: var(--background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @include nw(desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.team__personnel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color-header);
+    margin-bottom: 50px;
+    margin-top: 0;
+
+    @include nw(desktop) {
+        margin-bottom: 30px;
+    }
+}
+
+.personnel-table__personnel-item {
+    padding: 30px 32px;
+
+    @include nw(desktop) {
+        padding: 30px 74px 24px 74px;
+    }
+}

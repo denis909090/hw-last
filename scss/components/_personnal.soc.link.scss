@@ -1,0 +1,39 @@
+.personnel-table__social-link-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    @include nw(desktop) {
+        justify-content: space-evenly;
+    }
+}
+
+.personnel-table__social-link-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.personnel-table__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+    }
+
+    &:hover .social-link-icon,
+    &:focus .social-link-icon {
+        fill: #FFFFFF
+    }
+
+    &:hover .personnel-table__social-link-icon,
+    &:focus .personnel-table__social-link-icon {
+        fill: #FFFFFF
+    }
+}

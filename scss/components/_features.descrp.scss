@@ -1,0 +1,38 @@
+.feateres__description {
+    color: #212121;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    // @include mq(mobile-only) {
+    //     color: #212121;
+    //     text-align: center;
+    //     font-size: 14px;
+    //     font-style: normal;
+    //     font-weight: 700;
+    //     line-height: normal;
+    //     letter-spacing: 0.42px;
+    //     text-transform: uppercase;
+    // }
+
+    // @include mq(desctop) {
+    //     width: 270px;
+    // }
+}
+
+.feateres__description-groups {
+    color: #757575;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+
+    // @include mq(desctop) {
+    //     width: 270px;
+    // }
+}

@@ -1,0 +1,18 @@
+.types-work {
+    padding-bottom: 94px;
+    
+    // @include mq(not-desctop) {
+    //     display: none;
+    // }
+}
+
+.type-work-sections {
+    display: flex;
+
+}
+
+@include nw(desktop) {
+    .types-work {
+        display: none;
+    }
+}

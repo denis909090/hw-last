@@ -1,0 +1,67 @@
+@import './utils/vars';
+@import './utils/mixin';
+// base
+@import './base/common';
+@import './base/conteiner';
+@import './base/reset';
+
+// components - header
+@import './components/contacts';
+@import './components/header-main';
+@import './components/logo';
+@import './components/nav-link';
+
+// components - heros 
+@import './components/heros';
+
+// components - features
+@import './components/features.descrp';
+@import './components/features.svg';
+@import './components/features';
+
+// components - work
+@import './components/work-picture';
+@import './components/work.name';
+@import './components/work';
+
+// components - personnal
+@import './components/personnal.card';
+@import './components/personnal';
+@import './components/personnal.name';
+// @import './components/personnal/';
+// @import './components/personnal/personnal.picture';
+@import './components/personnal.soc.link';
+@import './components/personnal.work';
+
+// components-team
+// @import './components/reg.cutom./reg.custom.name';
+@import './components/reg.custom.svg';
+@import './components/reg.custom';
+
+// components - footer
+@import './components/footer.nav';
+@import './components/footer.sbsc';
+@import './components/footer.join-soc.link';
+@import './components/footer';
+
+// components - modal-window
+@import './components/backdrop';
+@import './components/modal-form';
+// components - modal-menu 
+@import './components/mobile-menu';
+
+
+
+
+
+// PORTFOLIO
+
+// components - buttons - prtf
+@import './components/btn-portfolio';
+
+// components - cards - prtf
+@import './components/descr.cards'; 
+@import './components/cards';
+
+// components - footer - prtf
+@import './components/nav.links-prtf';

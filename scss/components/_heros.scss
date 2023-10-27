@@ -1,0 +1,80 @@
+.heros {
+    background-image: url(/images/2-mobile-img.jpg);
+    max-width: 479px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)), url(/images/2-mobile-img.jpg);
+                width: 480px;
+    }
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)), url(/images/3-tablet-img.jpg);
+                width: 768px;
+    }
+
+
+
+}
+
+.introduction__text-table {
+    color: var(--color);
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: 2.64px;
+
+    padding-top: 100px;
+    
+    text-align: center;
+
+
+    @media screen and (min-width:480px) {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
+        padding-top: 118px;
+        margin: 0;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 26px;
+        padding-top: 118px;
+    }
+
+}
+
+.introduction {
+    padding: 0;
+}
+
+.introduction__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color);
+    border-radius: 4px;
+    border: none;
+    background-color: var(--color-blue);
+    text-align: center;
+    padding: 10px 32px;
+    margin-top: 30px;
+
+    &:active {
+        background-color: var(--color-button);
+        color: var(--color);
+    }
+
+    @media screen and (min-width:480px) {
+    }
+}

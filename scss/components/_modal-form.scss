@@ -1,0 +1,223 @@
+.text-modal {
+    display: block;
+    margin-bottom: 12px;
+}
+
+// .modal-form {
+// max-width: 340px;
+
+// @include mq(desctop) {
+//     width: 448px;
+// }
+// }
+
+.colortext-modal {
+    color: #2196F3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+
+    @include nw(desktop) {
+        font-size: 12px;
+    }
+
+    // @include mq(mobile) {
+    //     color: #2196F3;
+    //     font-size: 12px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: normal;
+    //     letter-spacing: 0.36px;
+    //     text-decoration-line: underline;
+    // }
+}
+
+.btn {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    border: none;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 52px;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border-color: #2196F3;
+    fill: #1a86de;
+}
+
+.form-input:hover~.form-icon,
+.form-input:focus~.form-icon {
+    fill: #2196F3;
+}
+
+
+.form-group {
+    position: relative;
+    display: block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-icon {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    display: block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::placeholder {
+    color: rgba(117, 117, 117, 0.50);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+
+.comment:hover,
+.comment:focus {
+    border-color: #2196F3;
+}
+
+.comment {
+    resize: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 100%;
+
+    @include nw(desktop) {
+        height: 120px;
+    }
+}
+
+.textarea {
+    display: block;
+    resize: none;
+}
+
+.form-title {
+    color: #212121;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+
+
+    @include nw(desktop) {
+        line-height: 30px;
+    }
+
+    // @include mq(not-desctop) {
+    //     line-height: 24px;
+    // }
+
+}
+
+.form-label-police {
+
+    @include nw(desktop) {
+        color: #757575;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;
+    }
+
+}
+
+.form-label {
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 11px 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-police {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px 0;
+
+    
+
+    // @media screen and(min-width:1200px) {
+    //     margin: 20px 0 30px 12px;
+    // }
+}
+
+.chek_input {
+    position: absolute;
+    appearance: none;
+}
+
+.chek_input:focus+.custom-checkbox {
+    outline: 2px solid #2196F3;
+}
+
+.checkbox:checked+.custom-checkbox {
+    background-color: #2196F3;
+
+    outline: 2px solid #2196F3;
+}
+
+.checkbox:checked+.custom-checkbox .custom-checkbox-svg {
+    opacity: 1;
+}
+
+.custom-checkbox-svg {
+    opacity: 0;
+
+    fill: #FFFFFF;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 15px;
+
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
+    outline: 2px solid #212121;
+    border-radius: 2px;
+    outline-offset: -2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

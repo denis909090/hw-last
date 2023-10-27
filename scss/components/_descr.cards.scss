@@ -1,0 +1,27 @@
+.description-cards {
+    padding: 20px 24px 20px 24px;
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+}
+
+.table-of-project {
+    color: var(--text-color-header);
+    letter-spacing: 0.6px;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.description-of-project {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--description-list);
+    text-decoration: none;
+    text-align: start;
+}

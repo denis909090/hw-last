@@ -1,0 +1,15 @@
+.type-work-sections__main-foto {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.type-work-sections__description-picture {
+    position: relative;
+    width: 370px;
+}
+
+.type-work-sections__foto {
+    width: 370px;
+    height: 294px;
+}

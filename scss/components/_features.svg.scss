@@ -1,0 +1,32 @@
+.feateres__features-block {
+    height: 120px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #F5F4FA;
+    
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    @include nw(desktop) {
+        width: 354px;
+        height: 120px;
+    }
+
+    // @include mq(mobile) {
+    //     width: 100%;
+    // }
+
+    // @include mq(tablet) {
+    //     width: 354px;
+    // }
+
+    // @include mq(desctop) {
+    //     width: 270px;
+    // }
+}

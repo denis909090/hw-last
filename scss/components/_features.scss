@@ -1,0 +1,70 @@
+.feateres {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        @include nw(desktop) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+}
+
+.feateres__list-item {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    // @include mq(mobile) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+
+    // @include mq(tablet) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
+}
+
+.feateres__list-link {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+
+    @include nw(desktop) {
+        width: 354px;
+    }
+    // @include mq(mobile-only) {
+    //     &:not(:last-child) {
+    //         margin-right: 0;
+    //     }
+
+    //     &:not(:first-child) {
+    //         margin-top: 30px;
+    //     }
+    // }
+
+    // @include mq(tablet) {
+    //     &:nth-child(odd) {
+    //         margin-right: 30px;
+    //     }
+
+    //     &:nth-child(-n + 2) {
+    //         margin-bottom: 30px;
+    //     }
+    //     align-items: center;
+    //     width: 354px;
+    // }
+
+
+    // @include mq(desctop) {
+    //     width: 270px;
+    //     &:nth-child(-n + 2) {
+    //         margin-bottom: 0;
+    //     }
+
+    //     &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+    // }
+}
