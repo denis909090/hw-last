@@ -1,11 +1,9 @@
 .personnel-table__social-link-item {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+
     margin-top: 16px;
 
-    @include nw(desktop) {
-        justify-content: space-evenly;
-    }
 }
 
 .personnel-table__social-link-icon {

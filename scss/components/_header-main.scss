@@ -1,8 +1,8 @@
 .navigation {
     align-items: center;
-    
+
     @media screen and (min-width:480px) {
-        padding:16px 0;
+        padding: 16px 0;
         display: block;
     }
 
@@ -61,16 +61,23 @@
 .header-navigation {
     display: flex;
     gap: 315px;
-    
-    @media screen and (min-width:768px) {
-        gap: 94px;
+
+    @media screen and (max-width:480px) {
+        display: none;
     }
 
     @media screen and (min-width:480px) {
-       display: none; 
-    }
-
-    @media screen  and (max-width:480px) {
         display: none;
     }
+
+    @media screen and (min-width:768px) {
+        gap: 94px;
+        display: flex;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        gap: 315px;
+    }
+
 }

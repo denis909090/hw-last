@@ -1,4 +1,6 @@
-.navigation-contact__mail-header {
+.contact {
+    display: flex;
+    align-items: center;
 
     &:hover,
     &:focus {
@@ -9,28 +11,23 @@
     &:focus .email {
         fill: #2196F3;
     }
-}
-
-.contact {
-    @include nw(desktop) {
-        font-size: 12px;
+        font-size: 14px;
         color: #757575;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.24px;
-    }
 }
 
+.navigation-contact__contact-number-header{ 
+    &:hover .telephone {
+        fill: #2196F3;
+    }
+}
 .telephone {
     width: 10px;
     height: 15.995px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact {
-    display: flex;
-    align-items: center;
 }
 
 .email,
@@ -43,13 +40,18 @@
     font-size: 14px;
     color: var(--description-list);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width:1200px) {
+        font-size: 12px;
+    }
 }
 
 .navigation-contact__mail-header {
     text-decoration: none;
     font-style: none;
-    font-size: 14px;
+
     color: var(--description-list);
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
     line-height: 1.1;
@@ -58,24 +60,32 @@
     margin-right: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include nw(desktop) {
-        margin-right: 0;
+    @media screen and (max-width:1200px) {
         font-size: 12px;
-
+        margin-right: 0;
     }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 0;
+    }
+
 }
 
 .navigation-contact {
-    display: flex;
-    align-items: center;
-
-    @include nw(desktop) {
+    @media screen and (min-width:768px) {
         display: flex;
         flex-direction: column;
         align-items: baseline;
 
         gap: 10px;
     }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
 }
 
 

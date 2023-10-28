@@ -19,13 +19,16 @@
 }
 
 .navigation-footer__social-item-footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin-top: 28px;
+
+    @media screen and (min-width:1200px) {
+        gap: 9px;
+    }
 }
 
-.navigation-footer__address-link:not(:last-child) {
-    margin-bottom: 12px;
-}
 
 .navigation-footer__address-description {
     font-style: normal;

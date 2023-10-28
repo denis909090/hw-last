@@ -1,10 +1,12 @@
 .heros {
-    max-width: 479px;
     height: 400px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (max-width:480px) {
         height: 380px;
@@ -28,6 +30,13 @@
         width: 768px;
     }
 
+    @media screen and (min-width:1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)), url(../images/1-desctop-img.jpg);
+        width: 1600px;
+        height: 600px;
+    }
+
 
 
 }
@@ -40,6 +49,9 @@
 
     text-align: center;
 
+    @media screen and (max-width:480px) {
+        font-size: 20px;
+    }
 
     @media screen and (min-width:480px) {
         font-size: 26px;
@@ -56,9 +68,11 @@
         font-size: 26px;
         padding-top: 118px;
     }
-
-    @media screen and (max-width:480px) {
-        font-size: 20px;
+    
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        font-size: 44px;
+        letter-spacing: 2.64px;
     }
 
 }
@@ -89,5 +103,9 @@
 
     @media screen and (min-width:480px) {
         padding: 10px 24px;
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 10px 32px;
     }
 }
