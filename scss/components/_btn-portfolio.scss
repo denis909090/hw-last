@@ -1,0 +1,57 @@
+.btn-prtf {
+    background-color: var(--background-color);
+    color: var(--text-color-header);
+    border: none;
+    letter-spacing: 0.48px;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 26px;
+}
+
+.main-list {
+    padding: 60px 0;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.buttons-list {
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttons {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.btn-prtf {
+
+    &:hover,
+    &:focus {
+        color: var(--background-color);
+        background-color: var(--color-blue);
+        box-shadow:
+            0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+            0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+            0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+.btn-prtf {
+    &:active {
+        background-color: var(--color-button);
+        color: var(--color);
+    }
+}

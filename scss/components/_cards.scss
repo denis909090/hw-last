@@ -31,22 +31,28 @@
             0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
 
-    @include nw(desktop) {
-        width: 354px;
+    @media screen and (max-width:480px) {
+        width: 100%;
     }
-}
 
-.peacture {
-    @include nw(destop) {
-        width: 354px;
-        height: 294px;
+    @media screen and (min-width:480px) and (max-width:768px) {
+        width: 450px;
     }
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        width: 354px;
+    }
+
 }
 
 .actions {
     position: relative;
     overflow: hidden;
     height: 294px;
+}
+
+.peacture {
+    max-height: 294px;
 }
 
 .text-description {

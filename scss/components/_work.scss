@@ -1,18 +1,12 @@
 .types-work {
-    padding-bottom: 94px;
+    padding: 94px 0;
     
-    // @include mq(not-desctop) {
-    //     display: none;
-    // }
+    @media screen and (max-width:1200px) {
+        display: none;
+        padding: 60px 0;
+    } 
 }
 
 .type-work-sections {
     display: flex;
-
-}
-
-@include nw(desktop) {
-    .types-work {
-        display: none;
-    }
 }

@@ -3,17 +3,22 @@
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        height: 146px;
+    }
 }
 
 .table-of-project {
-    color: var(--text-color-header);
-    letter-spacing: 0.6px;
-    line-height: 2;
+    letter-spacing: .6px;
+    line-height: 36px;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
     text-align: start;
+    font-style: normal;
     margin-bottom: 4px;
+    color: #212121;
 }
 
 .description-of-project {

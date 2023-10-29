@@ -71,6 +71,10 @@
     @media screen and (min-width:768px) {
         align-items: baseline;
     }
+
+    @media screen and (min-width:1200px) {
+        gap: 0;
+    }
 }
 
 .join-footer-conteiner {
@@ -78,5 +82,6 @@
 
     @media screen and (min-width:1200px) {
         margin-left: auto;
+        margin-right: auto;
     }
 }

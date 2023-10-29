@@ -11,6 +11,11 @@
     &:focus .email {
         fill: #2196F3;
     }
+
+    &:hover .telephone,
+    &:focus .telephone {
+        fill: #2196F3;
+    }
         font-size: 14px;
         color: #757575;
         font-style: normal;

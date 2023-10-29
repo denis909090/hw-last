@@ -5,8 +5,11 @@
     flex-direction: column;
     align-items: center;
 
-    margin-left: auto;
-    margin-right: auto;
+    background-size: cover;
+    max-width: 1600px;
+    max-height: 600px;
+
+    margin: 0 auto;
 
     @media screen and (max-width:480px) {
         height: 380px;
@@ -16,25 +19,54 @@
 
         background-image: linear-gradient(rgba(47, 48, 58, 0.40),
                 rgba(47, 48, 58, 0.40)), url(../images/2-mobile-img.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)), url(../images/2-mobile-img@2x.jpg);
+        }
     }
 
     @media screen and (min-width:480px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.40),
                 rgba(47, 48, 58, 0.40)), url(../images/2-mobile-img.jpg);
         width: 480px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)), url(../images/2-mobile-img@2x.jpg);
+        }
     }
 
     @media screen and (min-width:768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.40),
                 rgba(47, 48, 58, 0.40)), url(../images/3-tablet-img.jpg);
         width: 768px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)), url(../images/3-tablet-img@2x.jpg);
+        }
     }
 
     @media screen and (min-width:1200px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.40),
                 rgba(47, 48, 58, 0.40)), url(../images/1-desctop-img.jpg);
+
         width: 1600px;
         height: 600px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)), url(../images/1-desctop-img@2x.jpg);
+        }
     }
 
 
@@ -68,7 +100,7 @@
         font-size: 26px;
         padding-top: 118px;
     }
-    
+
     @media screen and (min-width:1200px) {
         padding-top: 200px;
         font-size: 44px;
