@@ -36,6 +36,10 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width:1200px) {
+        text-align: center;
+    }
 }
 
 .subscribe-group-footer__btn-main-footer {
@@ -68,6 +72,10 @@
 .form-footer {
     display: flex;
     gap: 12px;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+    }
 
     @media screen and (min-width:480px) {
         flex-direction: column;

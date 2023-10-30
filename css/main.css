@@ -457,7 +457,6 @@ p {
 }
 
 .heros {
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,8 +468,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-size: cover;
-  max-width: 1600px;
-  max-height: 600px;
   margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
@@ -482,6 +479,7 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 100px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2-mobile-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2-mobile-img.jpg);
   }
@@ -497,6 +495,7 @@ p {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2-mobile-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2-mobile-img.jpg);
     width: 480px;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
@@ -522,8 +521,13 @@ p {
   .heros {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/1-desctop-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1-desctop-img.jpg);
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 1600px;
     height: 600px;
+    background-position: center;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -553,19 +557,17 @@ p {
     line-height: 42px;
     letter-spacing: 1.56px;
     text-transform: uppercase;
-    padding-top: 118px;
     margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .introduction__text-table {
     font-size: 26px;
-    padding-top: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .introduction__text-table {
-    padding-top: 200px;
+    padding-top: 0;
     font-size: 44px;
     letter-spacing: 2.64px;
   }
@@ -836,6 +838,11 @@ p {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .personnel-table__personnel-item {
+    padding: 30px 0 24px 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .personnel-table__personnel-item {
     padding: 30px 122px 24px 122px;
@@ -869,6 +876,13 @@ p {
   display: flex;
   gap: 10px;
   margin-top: 16px;
+}
+@media screen and (max-width: 480px) {
+  .personnel-table__social-link-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .personnel-table__social-link-icon {
@@ -1145,6 +1159,11 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .subscribe-group-footer__subscribe-footer {
+    text-align: center;
+  }
+}
 
 .subscribe-group-footer__btn-main-footer {
   color: #FFF;
@@ -1175,6 +1194,14 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+}
+@media screen and (max-width: 480px) {
+  .form-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (min-width: 480px) {
   .form-footer {
@@ -1288,6 +1315,11 @@ h2 {
   opacity: 1;
 }
 
+.close-icon {
+  width: 18px;
+  height: 18px;
+}
+
 .modal {
   width: 94%;
   max-height: 609px;
@@ -1309,7 +1341,7 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    max-height: none;
+    max-height: 588px;
     width: 528px;
   }
 }

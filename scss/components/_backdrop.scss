@@ -22,6 +22,11 @@
     opacity: 1;
 }
 
+.close-icon {
+    width: 18px;
+    height: 18px;
+}
+
 .modal {
     width: 94%;
     max-height: 609px;
@@ -42,7 +47,7 @@
     }
 
     @media screen and (min-width:1200px) {
-        max-height: none;
+        max-height:  588px;
         width: 528px;
     }
 }
