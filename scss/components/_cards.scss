@@ -55,24 +55,8 @@
 
 .peacture {
     @media screen and (max-width:480px) {
-        max-width: 450px;
+        max-width: 100%;
     }
-
-
-    // @media screen and (min-width:480px) {
-    //     height: 294px;
-    //     width: 450px;
-    // }
-
-    // @media screen and (min-width:768px) {
-    //     width: 354px;
-    //     height: 294px;
-    // }
-
-    // @media screen and (min-width:1200px) {
-    //     width: 370px;
-    //     height: 294px;
-    // }
 }
 
 .text-description {

@@ -1396,6 +1396,10 @@ h2 {
   }
 }
 
+.modal {
+  z-index: 5;
+}
+
 .btn {
   display: block;
   margin-left: auto;
@@ -1657,6 +1661,7 @@ h2 {
   height: 100%;
   background-color: #ffffff;
   padding: 48px 40px;
+  z-index: 2;
 }
 .mobile-menu.is-open {
   display: -webkit-box;
@@ -1675,6 +1680,12 @@ h2 {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.8px;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu__nav-link {
+    font-size: 27px;
+  }
 }
 
 .mobile-menu__nav-main-link {
@@ -1802,7 +1813,7 @@ h2 {
   fill: #2196F3;
 }
 .button .close {
-  z-index: 1;
+  display: block;
 }
 .button .close-icon {
   display: none;
@@ -1813,9 +1824,6 @@ h2 {
   }
 }
 
-.button.is-open .close {
-  position: fixed;
-}
 .button.is-open .close-icon {
   display: block;
 }
@@ -1869,7 +1877,6 @@ h2 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 326px;
     gap: 15px 8px;
     margin-bottom: 40px;
   }
@@ -2003,7 +2010,7 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .peacture {
-    max-width: 450px;
+    max-width: 100%;
   }
 }
 
