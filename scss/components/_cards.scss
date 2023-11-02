@@ -17,6 +17,8 @@
     width: 370px;
     display: block;
 
+    flex-grow: 1;
+
     &:hover .text-description,
     &:focus .text-description {
         opacity: 1;
@@ -46,28 +48,31 @@
 }
 
 .actions {
+    max-height: 294px;
     position: relative;
     overflow: hidden;
-    height: 294px;
 }
 
 .peacture {
-    // height: 294px;
-
-    @media screen and (min-width:480px) {
-        height: 294px;
-        width: 450px;
+    @media screen and (max-width:480px) {
+        max-width: 450px;
     }
 
-    @media screen and (min-width:768px) {
-        width: 354px;
-        height: 294px;
-    }
 
-    @media screen and (min-width:1200px) {
-        width: 370px;
-        height: 294px;
-    }
+    // @media screen and (min-width:480px) {
+    //     height: 294px;
+    //     width: 450px;
+    // }
+
+    // @media screen and (min-width:768px) {
+    //     width: 354px;
+    //     height: 294px;
+    // }
+
+    // @media screen and (min-width:1200px) {
+    //     width: 370px;
+    //     height: 294px;
+    // }
 }
 
 .text-description {

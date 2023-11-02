@@ -10,10 +10,12 @@
     margin-bottom: 20px;
     margin-top: 15px;
 
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:1200px) {
         text-align: center;
         margin-top: 0;
     }
+
+
 }
 
 .join-footer-conteiner__social-item-footer {

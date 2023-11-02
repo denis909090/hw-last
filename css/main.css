@@ -494,7 +494,6 @@ p {
   .heros {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2-mobile-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2-mobile-img.jpg);
-    width: 480px;
     padding: 118px 0;
   }
 }
@@ -508,7 +507,6 @@ p {
   .heros {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/3-tablet-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/3-tablet-img.jpg);
-    width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -525,8 +523,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1600px;
-    height: 600px;
     background-position: center;
   }
 }
@@ -765,12 +761,11 @@ p {
 }
 
 .types-work {
-  padding: 94px 0;
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 1200px) {
   .types-work {
     display: none;
-    padding: 60px 0;
   }
 }
 
@@ -1246,7 +1241,7 @@ h2 {
   margin-bottom: 20px;
   margin-top: 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .join-footer-conteiner__join {
     text-align: center;
     margin-top: 0;
@@ -1691,6 +1686,17 @@ h2 {
   line-height: normal;
   letter-spacing: 0.8px;
 }
+@media screen and (max-width: 480px) {
+  .mobile-menu__nav-main-link {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .link-mob-menu {
+    font-size: 27px;
+  }
+}
 
 .mobile-menu__main-link {
   color: #2196F3;
@@ -1700,10 +1706,20 @@ h2 {
   line-height: normal;
   letter-spacing: 0.68px;
 }
+@media screen and (max-width: 480px) {
+  .mobile-menu__main-link {
+    font-size: 27px;
+  }
+}
 
 .mobile-menu__contacts {
   margin-top: auto;
   margin-bottom: 64px;
+}
+@media screen and (max-width: 480px) {
+  .mobile-menu__contacts {
+    margin-bottom: 30px;
+  }
 }
 
 .mobile-menu__contact-link {
@@ -1723,6 +1739,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 
 .mobile-menu__social-link {
@@ -1739,16 +1758,22 @@ h2 {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.mobile-menu__social-list:not(:first-child) {
-  margin-left: 10px;
-}
-
 .mobile-menu__main-list {
   margin-bottom: 35px;
+}
+@media screen and (max-width: 480px) {
+  .mobile-menu__main-list {
+    margin-bottom: 15px;
+  }
 }
 
 .mobile-menu__list:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  .mobile-menu__list:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .button {
@@ -1796,6 +1821,14 @@ h2 {
 }
 .button.is-open .icon-menu {
   display: none;
+}
+
+.link-mobile {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-mobile:hover, .link-mobile:focus {
+  color: #2196F3;
 }
 
 .btn-prtf {
@@ -1882,11 +1915,6 @@ h2 {
   border-left: 1px solid #ECECEC;
   border-right: 1px solid #ECECEC;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .description-cards {
-    height: 146px;
-  }
-}
 
 .table-of-project {
   letter-spacing: 0.6px;
@@ -1934,6 +1962,9 @@ h2 {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 370px;
   display: block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .cards:hover .text-description, .cards:focus .text-description {
   opacity: 1;
@@ -1965,27 +1996,14 @@ h2 {
 }
 
 .actions {
+  max-height: 294px;
   position: relative;
   overflow: hidden;
-  height: 294px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .peacture {
-    height: 294px;
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .peacture {
-    width: 354px;
-    height: 294px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .peacture {
-    width: 370px;
-    height: 294px;
+    max-width: 450px;
   }
 }
 

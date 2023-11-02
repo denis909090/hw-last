@@ -71,6 +71,13 @@
                 </svg>
             </button>
 
+            <button type="button" class="button" data-menu-button>
+                <svg class="close" width="40" height="40" aria-label="переключатель мобільного меню">
+                    <use href="./images/sprite-mobile-menu.svg#icon-menu" class="icon-menu"></use>
+                    <use href="./images/sprite-mobile-menu.svg#icon-close" class="close-icon"></use>
+                </svg>
+            </button>
+
             <div class="mobile-menu" id="mobile-menu" data-menu>
                 <ul class="mobile-menu__nav">
                     <li class="mobile-menu__main-list">
@@ -78,19 +85,20 @@
 
                     </li>
                     <li class="mobile-menu__list">
-                        <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>
+                        <a href="./portfolio.html" class="mobile-menu__nav-link link-mob-menu link-mobile">Портфоліо</a>
                     </li>
                     <li class="mobile-menu__list">
-                        <a href="./" class="mobile-menu__nav-link">Контакти</a>
+                        <a href="./" class="mobile-menu__nav-link link-mob-menu link-mobile">Контакти</a>
                     </li>
                 </ul>
                 <ul class="mobile-menu__contacts">
                     <li class="mobile-menu__contact-list">
-                        <a href="tel:+380961111111" class="mobile-menu__main-link">+38 096 111 11 11</a>
+                        <a href="tel:+380961111111" class="mobile-menu__main-link link-mob-menu">+38 096 111 11 11</a>
                     </li>
 
                     <li class="mobile-menu__contact-list">
-                        <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com"
+                            class="mobile-menu__contact-link link-mobile">info@devstudio.com</a>
                     </li>
                 </ul>
                 <ul class="mobile-menu__socials">
@@ -474,6 +482,8 @@
 
         </div>
     </footer>
+
+    <script src="/js/mobile-menu.js"></script>
 </body>
 
 </html>
