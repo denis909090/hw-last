@@ -470,7 +470,7 @@ p {
   background-size: cover;
   margin: 0 auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .heros {
     height: 380px;
     display: -webkit-box;
@@ -484,7 +484,7 @@ p {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2-mobile-img.jpg);
   }
 }
-@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
   .heros {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2-mobile-img@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2-mobile-img@2x.jpg);
@@ -542,7 +542,7 @@ p {
   letter-spacing: 2.64px;
   text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .introduction__text-table {
     font-size: 20px;
   }
@@ -1190,7 +1190,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
 }
 @media screen and (max-width: 480px) {
   .form-footer {
@@ -1198,6 +1197,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1209,6 +1209,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1220,6 +1221,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1228,6 +1230,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 12px;
   }
 }
 
@@ -1297,7 +1300,7 @@ h2 {
   -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
-  z-index: 2;
+  z-index: 3;
 }
 
 .backdrop.is-hidden .modal {
@@ -1420,7 +1423,7 @@ h2 {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 52px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .btn {
     padding: 5px 30px;
   }
@@ -1522,6 +1525,12 @@ h2 {
     height: 120px;
   }
 }
+@media screen and (max-width: 479px) {
+  .comment {
+    height: 30px;
+    padding: 7px 10px;
+  }
+}
 
 .textarea {
   display: block;
@@ -1598,6 +1607,12 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px 0 30px 0;
+}
+@media screen and (max-width: 479px) {
+  .form-police {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .chek_input {
@@ -1684,8 +1699,8 @@ h2 {
   letter-spacing: 0.8px;
 }
 
-@media screen and (max-width: 480px) {
-  .mobile-menu__nav-link {
+@media screen and (max-width: 479px) {
+  .link-mobile {
     font-size: 27px;
   }
 }
@@ -1699,14 +1714,8 @@ h2 {
   line-height: normal;
   letter-spacing: 0.8px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mobile-menu__nav-main-link {
-    font-size: 27px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .link-mob-menu {
     font-size: 27px;
   }
 }
@@ -1719,7 +1728,7 @@ h2 {
   line-height: normal;
   letter-spacing: 0.68px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mobile-menu__main-link {
     font-size: 27px;
   }
@@ -1765,6 +1774,11 @@ h2 {
   line-height: 22px;
   letter-spacing: 0.36px;
   padding-right: 10px;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu__social-link {
+    font-size: 9px;
+  }
 }
 
 .mobile-menu__social-list:not(:last-child) {
@@ -1816,6 +1830,7 @@ h2 {
 }
 .button .close {
   display: block;
+  z-index: 3;
 }
 .button .close-icon {
   display: none;
@@ -1925,6 +1940,22 @@ h2 {
   border-right: 1px solid #ECECEC;
 }
 
+.descrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.descrp > .description-cards {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .table-of-project {
   letter-spacing: 0.6px;
   line-height: 36px;
@@ -2027,7 +2058,6 @@ h2 {
   letter-spacing: 0.54px;
   position: absolute;
   display: block;
-  padding: 63px 24px 63px 24px;
   opacity: 0;
   -webkit-transform: translateY(150%);
           transform: translateY(150%);
@@ -2039,7 +2069,36 @@ h2 {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  height: inherit;
+}
+@media screen and (max-width: 479px) {
+  .text-description {
+    padding: 77px 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .text-description {
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text-description {
+    padding: 55px 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-description {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-description {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-description {
+    padding: 63px 24px;
+  }
 }
 
 .mail {

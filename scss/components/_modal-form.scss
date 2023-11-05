@@ -21,12 +21,6 @@
     z-index: 5;
 }
 
-// .close-btn {
-//     z-index: 55;
-//     display: block;
-//     color: #000;
-// }
-
 .btn {
     display: block;
     margin-left: auto;
@@ -44,7 +38,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:479px) {
         padding: 5px 30px;
     }
 }
@@ -100,6 +94,11 @@
 
     @include nw(desktop) {
         height: 120px;
+    }
+
+    @media screen and (max-width:479px) {
+        height: 30px;
+        padding: 7px 10px;
     }
 }
 
@@ -167,6 +166,11 @@
     display: flex;
     align-items: center;
     margin: 20px 0 30px 0;
+
+    @media screen and (max-width:479px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 .chek_input {

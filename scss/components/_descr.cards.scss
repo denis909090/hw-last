@@ -3,8 +3,22 @@
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
+    // display: flex;
+    // flex-direction: column;
 }
 
+.descrp {
+    display: flex;
+    flex-direction: column;
+}
+
+.descrp > .description-cards {
+    flex-grow: 1;
+}
+
+// .descrp {
+    
+// }
 
 .table-of-project {
     letter-spacing: .6px;
