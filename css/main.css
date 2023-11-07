@@ -2073,14 +2073,10 @@ h2 {
     padding: 77px 24px;
   }
 }
-@media screen and (max-width: 320px) {
-  .text-description {
-    padding: 12px;
-  }
-}
 @media screen and (max-width: 375px) {
   .text-description {
-    padding: 55px 24px;
+    padding: 10px 24px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 480px) {
